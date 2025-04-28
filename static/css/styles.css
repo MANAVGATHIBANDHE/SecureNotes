@@ -1,0 +1,19 @@
+/* static/css/styles.css */
+
+/* Give body a subtle background */
+body {
+    background-color: #f8f9fa;
+    /* light gray, matches Bootstrap */
+}
+
+/* Style your cards with a soft shadow and rounded corners */
+.card {
+    border-radius: 0.75rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Make your buttons a bit taller for easier tapping */
+.btn {
+    padding: 0.65rem 1.25rem;
+    font-size: 1rem;
+}

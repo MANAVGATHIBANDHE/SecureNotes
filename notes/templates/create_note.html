@@ -1,0 +1,21 @@
+<!-- notes/templates/create_note.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Create Note – SecureNotes{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-6">
+        <h2 class="mb-4">Create a New Note 📝</h2>
+        <form method="POST" class="card p-4 shadow-sm bg-white rounded">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <br>
+            <button type="submit" class="btn btn-success">Save Note</button>
+            <br>
+            <a href="{% url 'list_notes' %}" class="btn btn-secondary ms-2">Cancel</a>
+        </form>
+    </div>
+</div>
+{% endblock %}
